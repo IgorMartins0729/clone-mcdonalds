@@ -1,24 +1,60 @@
+/* Importando Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 3px solid red;
+}
+
+header img {
+    width: 80px;
+    vertical-align: middle;
 }
 
 nav ul {
     display: flex;
     gap: 17px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    text-decoration: none;
-    list-style: none;
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: 900;
+    font-optical-sizing: auto;
 }
 
-.nav_img img {
-    width: 50px;
+nav ul li a:hover {
+    color: red;
+}
+
+.tittle_lancamentos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tittle_lancamentos h1 {
+    font-weight: 900;
+    font-style: normal;
+    border-bottom: 4px solid red;
 }
